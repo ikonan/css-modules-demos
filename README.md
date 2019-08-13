@@ -29,4 +29,4 @@ $ npm install
 ```
 $ npm run demo01
 ```
-打开浏览器，访问http://localhost:8080，查看结果。其他示例的运行方法类似。
+打开浏览器，访问 http://localhost:8080 这里输入代码，查看结果。其他示例的运行方法类似。
