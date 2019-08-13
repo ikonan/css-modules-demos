@@ -93,7 +93,7 @@ module.exports = {
   }
 };
 ```
-下面是.babelrc代码
+下面是.babelrc代码(最新版的babel配置代码)
 ```
 {
     "presets": ["@babel/preset-env", "@babel/preset-react", "mobx"],
