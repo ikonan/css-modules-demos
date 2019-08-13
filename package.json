@@ -7,6 +7,7 @@
     "demo01": "webpack-dev-server --config demo01/webpack.config.js --content-base demo01",
     "demo02": "webpack-dev-server --config demo02/webpack.config.js --content-base demo02",
     "demo03": "webpack-dev-server --config demo03/webpack.config.js --content-base demo03",
+    "demo04": "webpack-dev-server --config demo04/webpack.config.js --content-base demo04",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -23,6 +24,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.8.0"
