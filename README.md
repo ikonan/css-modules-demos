@@ -13,4 +13,10 @@ CSS Modules 用法教程
 
 因此，CSS Modules 很容易学，因为它的规则少，同时又非常有用，可以保证某个组件的样式，不会影响到其他组件。
 
-![](http://www.ruanyifeng.com/blogimg/asset/2016/bg2016061002.png "在这里输入图片标题")
+![](https://images.gitee.com/uploads/images/2019/0813/160900_42a8979d_1707251.png "在这里输入图片标题")
+
+###使用
+首先, 克隆示例库
+```
+git clone 
+```
