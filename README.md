@@ -103,3 +103,10 @@ module.exports = {
     ]
 }
 ```
+上面代码中，关键的一行是style-loader!css-loader?modules，它在css-loader后面加了一个查询参数modules，表示打开 CSS Modules 功能。
+
+现在，运行这个Demo。
+```
+npm run demo01
+```
+打开 http://localhost:8080 ，可以看到结果，h1标题显示为红色
