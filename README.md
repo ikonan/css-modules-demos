@@ -51,3 +51,10 @@ export default () => {
   );
 };
 ```
+
+上面代码中，我们将样式文件App.css输入到style对象，然后引用style.title代表一个class。
+```
+.title {
+  color: red;
+}
+```
