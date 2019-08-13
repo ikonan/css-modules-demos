@@ -58,3 +58,18 @@ export default () => {
   color: red;
 }
 ```
+构建工具会将类名style.title编译成一个哈希字符串。
+
+```
+<h1 class="_3zyde4l1yATCOkgn-DBWEL">
+  Hello World
+</h1>
+```
+
+App.css也会同时被编译。
+```
+._3zyde4l1yATCOkgn-DBWEL {
+  color: red;
+}
+```
+这样一来，这个类名就变成独一无二了，只对App组件有效。
