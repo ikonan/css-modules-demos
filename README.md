@@ -18,5 +18,15 @@ CSS Modules 用法教程
 ###使用
 首先, 克隆示例库
 ```
-git clone 
+$ git clone https://gitee.com/ikonan/css-modules-demos.git
 ```
+然后安装依赖
+```
+$ cd css-modules-demos
+$ npm install
+```
+接着，就可以运行第一个示例了。
+```
+$ npm run demo01
+```
+打开浏览器，访问http://localhost:8080，查看结果。其他示例的运行方法类似。
