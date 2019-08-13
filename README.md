@@ -73,3 +73,33 @@ App.css也会同时被编译。
 }
 ```
 这样一来，这个类名就变成独一无二了，只对App组件有效。
+
+CSS Modules 提供各种插件，支持不同的构建工具。本文使用的是 Webpack 的css-loader插件，因为它对 CSS Modules 的支持最好，而且很容易使用。顺便说一下，如果你想学 Webpack，可以阅读我的教程Webpack-Demos。
+
+下面是这个示例的webpack.config.js。
+```
+module.exports = {
+  entry: __dirname + "/index.js",
+  output: {
+    publicPath: "/",
+    filename: "./bundle.js"
+  },
+
+  module: {
+    rules: [
+      { test: /\.js|jsx$/, use: "babel-loader", exclude: /node_modules/ },
+      { test: /\.css$/, use: ["style-loader", "css-loader?modules"] }
+    ]
+  }
+};
+```
+下面是.babelrc代码
+```
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react", "mobx"],
+    "plugins": [
+      "@babel/plugin-proposal-object-rest-spread",
+      "@babel/plugin-transform-runtime"
+    ]
+}
+```
