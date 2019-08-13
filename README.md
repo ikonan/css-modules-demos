@@ -161,3 +161,43 @@ CSS Modules 还提供一种显式的局部作用域语法:local(.className)，�
 }
 ```
 
+三、定制哈希类名
+css-loader默认的哈希算法是[hash:base64]，这会将.title编译成._3zyde4l1yATCOkgn-DBWEL这样的字符串。
+
+webpack.config.js里面可以定制哈希字符串的格式。
+
+```
+module.exports = {
+  entry: __dirname + "/index.js",
+  output: {
+    publicPath: "/",
+    filename: "./bundle.js"
+  },
+
+  module: {
+    rules: [
+      { test: /\.js|jsx$/, use: "babel-loader", exclude: /node_modules/ },
+      {
+        test: /\.css$/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                mode: "local",
+                localIdentName: "[path][name]---[local]---[hash:base64:5]",
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+};
+```
+运行这个示例。
+```
+npm run demo03
+```
+会发现.title被编译成了demo03-components-App---title---GpMto。
