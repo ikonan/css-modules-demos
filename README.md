@@ -30,3 +30,23 @@ $ npm install
 $ npm run demo01
 ```
 打开浏览器，访问 http://localhost:8080 这里输入代码，查看结果。其他示例的运行方法类似。
+
+###一. 局部作用域
+
+CSS的规则都是全局的，任何一个组件的样式规则，都对整个页面有效。
+
+产生局部作用域的唯一方法，就是使用一个独一无二的class的名字，不会与其他选择器重名。这就是 CSS Modules 的做法。
+
+下面是React 的一个组件
+```
+import React from 'react';
+import style from './App.css';
+
+export default () => {
+  return (
+    <h1 className={style.title}>
+      Hello World
+    </h1>
+  );
+};
+```
