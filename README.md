@@ -38,7 +38,7 @@ CSS的规则都是全局的，任何一个组件的样式规则，都对整个�
 
 产生局部作用域的唯一方法，就是使用一个独一无二的class的名字，不会与其他选择器重名。这就是 CSS Modules 的做法。
 
-下面是React 的一个组件
+下面是React 的一个组件 App.js
 ```
 import React from 'react';
 import style from './App.css';
