@@ -14,8 +14,8 @@ CSS Modules 用法教程
 因此，CSS Modules 很容易学，因为它的规则少，同时又非常有用，可以保证某个组件的样式，不会影响到其他组件。
 
 ![](https://images.gitee.com/uploads/images/2019/0813/160900_42a8979d_1707251.png "在这里输入图片标题")
+### 使用
 
-###使用
 首先, 克隆示例库
 ```
 $ git clone https://gitee.com/ikonan/css-modules-demos.git
@@ -31,7 +31,8 @@ $ npm run demo01
 ```
 打开浏览器，访问 http://localhost:8080 这里输入代码，查看结果。其他示例的运行方法类似。
 
-###一. 局部作用域
+### 一. 局部作用域
+
 
 CSS的规则都是全局的，任何一个组件的样式规则，都对整个页面有效。
 
